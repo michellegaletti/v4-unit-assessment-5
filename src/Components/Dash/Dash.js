@@ -43,7 +43,6 @@ class Dash extends Component {
       }
     }
     axios.get(url).then((res) => {
-      console.log(res.data);
       this.setState({ posts: res.data, loading: false });
     });
   }
