@@ -1,6 +1,6 @@
 .dash {
-    width: 70%;
-    margin: 0 auto;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .dash-filter {
@@ -29,7 +29,7 @@
   align-items: center;
 }
 
-.dash-post-box{
+.dash-post-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,4 +38,30 @@
 
 .dash-post-box > h3 {
   font-size: 30px;
+}
+
+@media (max-width: 600px) {
+  .dash {
+    margin-left: 5%;
+    width: 65vw;
+  }
+  .dash-filter {
+    display: block;
+  }
+  .dash-check-box {
+    width: 100%;
+  }
+  .dash-search-box {
+    width: 100%;
+    flex-direction: column;
+    height: 15vh;
+    margin-top: 5%;
+  }
+  .dash-post-box {
+    flex-direction: column;
+  }
+  .author-box {
+    justify-content: space-around;
+    width: 100%;
+  }
 }
